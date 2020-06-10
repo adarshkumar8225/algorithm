@@ -1,3 +1,12 @@
+/* In Knapsack algorithm we have to full the bag with some capacity in such a way that 
+profit becomes maximum.
+Algorithm:-
+first take the ratio of profit/ weight and sort them in order of ratio.
+then take one with maximum ratio first
+*/
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -94,6 +103,7 @@ int main()
         }
 	//function call.
 	float prof= knapsack(A,cap);
+	//without function call it can also be done
 /*	float prof=0.0;
 	i=0;
         while(cap)
