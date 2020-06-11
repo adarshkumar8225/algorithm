@@ -1,3 +1,12 @@
+/*here we have jobs with profit and their deadlines we need to maximize the profit.
+Algorithm:
+Take an array of size equal to maximum deadline.
+take the job with max profit and place it to the farthest possible position which is before its deadline.
+then take the next max and traverse the array from index equal to deadline to the left
+and whenever get empty space place it otherwise leave the job.
+*/
+//***************************************************************************************************
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -44,8 +53,7 @@ void swap(struct data *A, struct data *B)
 
 }
 
-
-
+//*************************************************************************************
 int main()
 {
         int i,j;   
