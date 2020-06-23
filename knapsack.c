@@ -84,7 +84,7 @@ int main()
 	{
 		for(j=i+1;j<n;j++)
 		{
-			if((A[i].ratio - A[j].ratio)<0)
+			if(A[i].ratio < A[j].ratio)
 			{
 			      
 				swap(&A[i],&A[j]);
@@ -103,25 +103,7 @@ int main()
         }
 	//function call.
 	float prof= knapsack(A,cap);
-	//without function call it can also be done
-/*	float prof=0.0;
-	i=0;
-        while(cap)
-	{
-		if(cap<A[i].weight)
-		{
-			prof=prof+A[i].ratio * cap;
-			i++;
-			cap=0;
-			break;
-		}
-		else
-		{
-			cap=cap-A[i].weight;
-			prof= prof+A[i].profit;
-			i++;
-		}
-	}*/
+	
 	printf("\nMaximum possible profit: %.2f",prof);
 
 }
