@@ -79,12 +79,12 @@ int main()
 		printf("%d	",A[i].deadline);
 
 	}
-	//sorting with respect to ratio.
+	//sorting with respect to profit in descending order.
 	for(i=0;i<n-1;i++)
 	{
 		for(j=i+1;j<n;j++)
 		{
-			if((A[i].profit - A[j].profit)<0)
+			if(A[i].profit < A[j].profit)
 			{
 			      
 				swap(&A[i],&A[j]);
